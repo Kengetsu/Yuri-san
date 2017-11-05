@@ -1,7 +1,7 @@
 {
-  "name": "guidebot",
-  "version": "2.2.4",
-  "description": "A boilerplate example bot with command handler and reloadable commands. Updated and Maintained by the Idiot's Guide Community",
+  "name": "Yuri-san",
+  "version": "0.0.1",
+  "description": "Yuri-san discord bot based off guidebot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,7 @@
   "engines": {
     "node": ">=8"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/An-Idiots-Guide/guidebot.git"
-  },
-  "author": "Evelyne Lachance <eslachance@gmail.com> (http://evie.codes)",
-  "contributors": [
-    "York (http://anidiots.guide)"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/An-Idiots-Guide/guidebot/issues"
-  },
-  "homepage": "https://github.com/An-Idiots-Guide/guidebot#readme",
+  "author": "Kengetsu",
   "dependencies": {
     "discord.js": "^11.2.1",
     "enmap": "^0.4.1",
