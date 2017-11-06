@@ -1,6 +1,6 @@
 exports.run = async (client, message, args, level) => { // eslint-disable-line no-unused-vars
     let lib = require("../modules/library.js");
-    let result = lib(client.library,"waifu", args, level)
+    let result = await lib(client.library,"waifu", args, level);
 
     if(!result) return false;
     message.channel.send(result);

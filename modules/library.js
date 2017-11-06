@@ -1,17 +1,23 @@
 module.exports = (library, category, args, level) => {
-    try {
+    try
+    {
         let currentLib = library.get(category) ? library.get(category) : [];
-        if(level >= 4){
-            if(args[0] === "add"){
+
+        if(level >= 8)
+        {
+            if(args[0] === "add")
+            {
                 console.log(args);
                 if(args.length <= 1) throw "You must provide an image to add!";
 
                 let img;
 
-                if(args[1].match(/(.jpg|.png|.gif)$/i)) {
+                if(args[1].match(/(.jpg|.png|.gif)$/i))
+                {
                     img = args[1];
                 }
-                else{
+                else
+                {
                     throw "Invalid image url. Must end in .png, .jpg, or .gif";
                 }
 
@@ -23,7 +29,8 @@ module.exports = (library, category, args, level) => {
 
                 return ("Image added!");
             }
-            else if(args[0] === "remove"){
+            else if(args[0] === "remove")
+            {
                 if(args.length <= 1) throw "You must provide an image to remove!";
 
                 let img = args[1];
@@ -36,17 +43,19 @@ module.exports = (library, category, args, level) => {
                 return ("Image removed!");
             }
         }
-        if(currentLib.length !== 0){
+        if(currentLib.length !== 0)
+        {
             return currentLib.random();
         }
-        else{
+        else
+        {
             return `No ${category} found! QQ`;
         }
 
     }
     catch(err)
     {
-        console.error(err);
-        return "Something went wrong! QQ";
+        console.error(args,err);
+        return err;
     }
 }

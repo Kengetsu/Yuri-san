@@ -6,7 +6,7 @@ const config = {
     "admins": [],
 
     // Bot Support, level 8 by default. Array of user ID strings
-    "support": [],
+    "support": ["104936666589888512"],
 
     // Your Bot's Token. Available on https://discordapp.com/developers/applications/me
     "token": "MjQ2MDU5MDA2NDc5Njk1ODcy.DN_smQ.2ZoIZKR9hqAaujv-rVF2wC-kQRI",
@@ -21,7 +21,7 @@ const config = {
         "modLogChannel": "mod-log",
         "modRole": "Moderator",
         "adminRole": "Administrator",
-        "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
+        "systemNotice": "false", // This gives a notice when a user tries to run a command that they do not have permission to use.
         "welcomeChannel": "general",
         "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :D",
         "welcomeEnabled": "false"
